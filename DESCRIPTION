@@ -1,0 +1,29 @@
+Package: KerusCloudToolBox
+Title: Common data wrangling and ulitlity functions for handling KerusCloud data.
+Version: 0.0.0.9000
+Authors@R: 
+    c(person(given = "Gareth",
+           family = "Burns",
+           role = c("aut", "cre"),
+           email = "gareth.burns@exploristics.com"
+           ),
+           person(given = "Emily",
+           family = "Rogan",
+           role = "aut",
+           email = "emily.rogan@exploristics.com"
+           ))
+Description: The KerusCloudToolBox package provides a suite of tools for efficient data wrangling and utility functions specifically designed for handling and manipulating simulated KerusCloud data. This package is tailored to meet the needs of statisticians data scientists, and analysts who which work with simulated data outside of KerusCloud for tasks such as model testing, algorithm development, and data visualisation. These functions for data transformation, cleaning, and summarization simplif the process of preparing simulated data for analysis, ensuring consistency and accuracy in your data workflows.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Depends: 
+    R (>= 2.10)
+LazyData: true
+Imports: 
+    purrr,
+    snakecase,
+    tools

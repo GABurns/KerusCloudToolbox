@@ -1,0 +1,60 @@
+---
+output: github_document
+editor_options: 
+  markdown: 
+    wrap: sentence
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# KerusCloudToolBox
+
+<!-- badges: start -->
+ [![Project Status](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active/)
+[![Package version](https://img.shields.io/badge/GitHub-0.0.0.9000-orange.svg)](https://github.com/GABurns/KerusToolBox/)
+[![last_update](https://img.shields.io/badge/last%20update--blue.svg)](https://github.com/GABurns/KerusToolBox/) 
+  [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+<!-- badges: end -->
+
+The KerusCloudToolBox package provides a suite of tools for efficient data wrangling and utility functions specifically designed for handling and manipulating simulated KerusCloud data. This package is tailored to meet the needs of statisticians data scientists, and analysts who which work with simulated data outside of KerusCloud for tasks such as model testing, algorithm development, and data visualisation. These functions for data transformation, cleaning, and summarization simplify the process of preparing simulated data for analysis, ensuring consistency and accuracy in your data workflows.
+
+## Key Features:
+
+-   **Optimised Data Import:** Functions to easily import and read simulated data from various formats, including CSV, JSON, and RData.
+
+-   **Data Transformation:** Utilities for reshaping, pivoting, and manipulating data frames to achieve the desired structure.
+
+-   **Data Cleaning:** Tools for handling missing data, outliers, and inconsistencies, allowing for cleaner and more reliable datasets.
+
+-   **Integration Capabilities:** Easy integration with popular R packages like dplyr, tidyr, and ggplot2 for enhanced data manipulation and visualization.
+
+## Installation
+
+You can install the development version of KerusCloudToolBox from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("GABurns/KerusCloudToolBox")
+```
+
+# About Us
+
+## Exploristics
+
+[Exploristics](https://exploristics.com/) is a world-leading provider of biosimulation software and biostatistics services for designing, analysing and reporting clinical trials and real-word data analysis. If you want to find out more about KerusCloud or are other services be sure to check our our [website](https://exploristics.com/) or follow find us on [social media](https://www.linkedin.com/company/exploristics/).
+
+## KerusCloud
+
+KerusCloud is a cutting edge clinical trial optimization software, synthetic data generation software tool that leverages of the power of cloud-based computing and novel Data Science techniques to create in-silco virtual patient data.
+
+This allows the creation of datasets at a scale not possible with traditional clinical trials and **KerusCloud** provides a suite of in-built analyses and visualization techniques to analyse and interpret these data to provide
+

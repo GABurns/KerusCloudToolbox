@@ -1,0 +1,96 @@
+{
+  "NumberOfSimulations": 25,
+  "Scenarios": {
+    "Variable Scenarios": [
+      "Worst",
+      "Likely",
+      "Best"
+    ],
+    "Correlation Scenarios": [
+      "Baseline",
+      "Weak",
+      "Strong"
+    ]
+  },
+  "Variables": {
+    "Norm": {
+      "Type": "Normal",
+      "Description": "A normal distibution",
+      "DefinedBy": "Population",
+      "Timepoint" : 0,
+      "Layers": {
+        "Population": {
+          "Parameters": {
+            "mean": {
+              "Type": "Single",
+              "Value": 150
+            },
+            "sd": {
+              "Type": "Single",
+              "Value": 15
+            }
+          }
+        }
+      }
+    },
+    "Group": {
+      "Type": "Group",
+      "Timepoint" : 0,
+      "Description": "Treatment Group",
+      "Levels": [
+        "Control",
+        "Treat"
+      ]
+    },
+    "Bino": {
+      "Type": "Binomial",
+      "Description": "Sex",
+      "DefinedBy": "Population",
+      "Timepoint" : 5,
+      "Layers": {
+        "Population": {
+          "Parameters": {
+            "prob": {
+              "Type": "Single",
+              "Value": 0.5
+            }
+          }
+        }
+      }
+    },
+    "BinoLaye": {
+      "Type": "Binomial",
+      "Description": "Sex",
+      "Timepoint" : null,
+      "DefinedBy": "Population",
+      "Levels": [
+        "Male",
+        "Female"
+      ],
+      "Layers": {
+        "Layer0": {
+          "layerDefinition": {
+            "Group": "Control"
+          },
+          "Parameters": {
+            "prob": {
+              "Type": "Single",
+              "Value": 20
+            }
+          }
+        },
+        "Layer1": {
+          "layerDefinition": {
+            "Group": "Treat"
+          },
+          "Parameters": {
+            "prob": {
+              "Type": "Single",
+              "Value": 60
+            }
+          }
+        }
+      }
+    }
+  }
+}
