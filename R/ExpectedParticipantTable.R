@@ -18,8 +18,8 @@ ExpectedParticipantTable <-
            end_timepoint = NULL,
            ...) {
     if (length(unique(recruitment_profile$RecruitmentPeriod)) == 1 &&
-        is.null(end_timepoint_duration)) {
-      stop("If only one RecruitmentPeriod then a end_timepoint_duration must be suplied")
+        is.null(end_timepoint)) {
+      stop("If only one RecruitmentPeriod then a end_timepoint must be suplied")
     }
 
     recruitment_profile$lower_timepoint <-
